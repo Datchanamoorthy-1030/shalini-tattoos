@@ -1,0 +1,81 @@
+.hero {
+  padding: 100px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 600px;
+}
+/* ===== HERO VISUAL ENHANCEMENT (SAFE) ===== */
+.hero {
+  position: relative;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.85)
+    ),
+    url("https://images.unsplash.com/photo-1520975922284-8b456906c813");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* CTA Button inside hero */
+.hero .hero-btn {
+  padding: 14px 28px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.form-section {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-section h2 {
+  margin-bottom: 20px;
+}
+
+.form-section input,
+.form-section textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: #111;
+  border: 1px solid #222;
+  color: #fff;
+}
+
+.form-section button {
+  width: 100%;
+  padding: 14px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
