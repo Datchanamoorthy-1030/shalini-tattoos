@@ -3,6 +3,7 @@ import { createAppointment } from "../../services/appointmentService";
 import "./Home.css";
 
 
+
 const Home = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -43,21 +44,28 @@ const handleSubmit = async (e) => {
   return (
     <div>
       {/* Hero Section */}
-     <section className="hero">
-  <h1>Ink That Tells Your Story</h1>
-  <p>
-    Dark, refined, and relentlessly custom. We craft one-of-a-kind tattoo
-    pieces designed around your story and your skin.
-  </p>
-  <button className="hero-btn">Book an Appointment</button>
+    <section className="hero">
+  <div className="hero-inner">
+    <h1>Ink That Tells Your Story</h1>
+    <p>
+      Dark, refined, and relentlessly custom. We craft one-of-a-kind tattoo
+      pieces designed around your story and your skin.
+    </p>
 
+    <button className="hero-btn">Book an Appointment</button>
+  </div>
 </section>
+
+
 
 
       {/* Booking Form */}
       <section className="form-section">
 
         <h2>Book an Appointment</h2>
+<p style={{ color: "#aaa", marginBottom: "20px" }}>
+  Fill out the form and we’ll get back to you shortly.
+</p>
 
         <form style={{ maxWidth: "500px" }} onSubmit={handleSubmit}>
 

@@ -1,8 +1,4 @@
-.hero {
-  padding: 100px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
+
 
 .hero h1 {
   font-size: 48px;
@@ -16,16 +12,23 @@
 }
 /* ===== HERO VISUAL ENHANCEMENT (SAFE) ===== */
 .hero {
-  position: relative;
+  padding: 120px 20px;
+  width: 100%;
+
   background: linear-gradient(
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.85)
-    ),
-    url("https://images.unsplash.com/photo-1520975922284-8b456906c813");
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
+    180deg,
+    #000000 0%,
+    #0b0b0b 50%,
+    #000000 100%
+  );
 }
+
+
+.hero-inner {
+  max-width: 1000px;
+  margin: auto;
+}
+
 
 /* CTA Button inside hero */
 .hero .hero-btn {
@@ -79,3 +82,35 @@
     font-size: 16px;
   }
 }
+/* ===== FORM VISUAL ENHANCEMENT (SAFE) ===== */
+.form-section {
+  background-color: #0f0f0f;
+  border: 1px solid #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Form inputs polish */
+.form-section input,
+.form-section textarea {
+  border-radius: 6px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+  border-color: #e50914;
+  box-shadow: 0 0 0 1px rgba(229, 9, 20, 0.4);
+}
+
+/* Submit button polish */
+.form-section button {
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.form-section button:hover {
+  box-shadow: 0 10px 25px rgba(229, 9, 20, 0.35);
+}
+

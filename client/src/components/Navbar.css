@@ -42,3 +42,38 @@ z-index: 1000;
     gap: 12px;
   }
 }
+/* ===== NAVBAR VISUAL ENHANCEMENT (SAFE) ===== */
+.navbar {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* Underline hover animation */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e50914;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.navbar {
+  padding: 18px 40px;
+}

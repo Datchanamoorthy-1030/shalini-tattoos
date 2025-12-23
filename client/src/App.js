@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home/Home";
 import AdminDashboard from "./pages/Admin/AdminDashboard";
 import AdminLogin from "./pages/Admin/AdminLogin";
@@ -23,6 +24,7 @@ function App() {
           }
         />
       </Routes>
+       <Footer />
     </Router>
   );
 }
